@@ -3,6 +3,10 @@
   width:225px;
 }
 
+headerimg {
+  width:100%;
+  height:250px;
+}
 
 /* Style the header: fixed position (always stay at the top) */
 .header {
