@@ -2,22 +2,69 @@
 <html lang="en"><center>
 <link rel="stylesheet"; type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#">Home</a></li>
+
+
+<div class="container">
+  <center><h2>Reviews & Discovery</h2></center>
+  <!--To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.-->
+  <ul class="nav nav-pills nav-justified">
+     <li class="active"><a data-toggle="pill" href="home"">Home</a></li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week of 10/19
+    <!--to create the caret to access other pages -->
     <span class="caret"></span></a>
+    <!--this is for the dropdown tabs-->
     <ul class="dropdown-menu">
-      <li><a href="#">Chandelier</a></li>
-      <li><a href="#">Talkhouse Podcast</a></li>
-      <li><a href="#">Savage Mode 2</a></li>
+      <li><a data-toggle="pill" href="#chandelier">Chandelier</a></li>
+      <li><a data-toggle="pill" href="#talkhouse">Talkhouse Podcast</a></li>
+      <li><a data-toggle="pill" href="#savagemode2">Savage Mode 2</a></li>
     </ul>
   </li>
-  <li><a href="#">Week of</a></li>
-  <li><a href="#">Week of</a></li>
-</ul>
+  <li><a href="#">Week of (filler)</a></li>
+  <li><a href="#">Week of (filler)</a></li>
+  </ul>
+ </div> 
+  
+  
+  <div class="tab-content">
+    
+    <div id="home" class="tab-pane fade in active">
+      <h3>Welcome</h3>
+      <p>This is the reviews page! Here I will review the events of the week and discuss my methods for finding new music.</p>
+    </div>
+    <div id="chandelier" class="tab-pane fade">
+      <h3>Chandelier 7/10</h3>
+      <h1>By Will Paquin</h1>
+      <p class="containter" style="text-size:15px">Paquin began his music career on tik tok when he posted a video sitting on a porch with a sunset
+      in the background. I remember scrolling on my for you page and feeling an unusual comfort when he played his
+       first draft of his first song "Chandelier". I like the song and listen all the way through each time, but I 
+       enjoyed the stripped down version better with just vocals
+      </p>
+    </div>
+    <div id="talkhouse" class="tab-pane fade">
+      <h3>Talkhouse Podcast - 6/10</h3>
+      <p  class="containter" style="font-size:15px">The talkhouse podcast is a true treat for any indie lover. Instagram ads blessed me and advertised that 
+      Mac Demarco, one of my favorite artists, had a podcast with Dayglow an artist that I knew <em>of</em> but not about. 
+      In the podcast, the two artists discuss touring, the impact of COVID on the industry, and various other topics. Demarco becomes a big brother type of figure
+      during the podcast by imparting tidbits of information with young Dayglow yet they also can share a laugh over their work. I enjoyed it, but found it to be a little slow at times,
+      but that is what comes with Indie artists and it is always nice to slow down in the bustle and hustle of every day.</p>
+    </div>
+    <div id="savagemode2" class="tab-pane fade">
+      <h3>Savage Mode 2 - 2/10</h3>
+      <p  class="containter" style="font-size:15px">Metro Boomin and 21 Savage released their much anticipated follow up to the iconic album
+      "Savage Mode", and I was sadly underwhelmed. Their first album yielded songs that are still on my playlist nearly
+      four and a half years later like "X" and "Savage Mode". In their second album, I found the intro "Intro" featuring Morgan Freedman to be the best part of 
+      the album. The track "Mr. Right Now" featuring Drake has a weird high pitched beat mixed with 808's and hi-hats. In my opinion without 
+      the main beat, it would have been a hit. Overall disappointed and skipped most of the songs in the album. </p>
+    </div>
+    
+  </div>
+	
+</div>
 
 
 
