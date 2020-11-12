@@ -3,11 +3,6 @@
   width:225px;
 }
 
-headerimg {
-  width:100%;
-  height:350px;
-}
-
 /* Style the header: fixed position (always stay at the top) */
 .header {
   position: fixed;
@@ -29,4 +24,8 @@ headerimg {
   height: 8px;
   background: #4caf50;
   width: 0%;
+}
+
+.fontsize{
+  font-size:18px;
 }
