@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><center>
 
-  <head>
+  <head class="header">
     <link rel="stylesheet"; type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,22 +17,23 @@
   	gtag('config', 'G-C4BF917RL3');
 	</script>
     <title>"Music Mondays - October 2020"</title>
-</head>
-<body style="background-color: #ffffcc">
-	<div class="container" style="background-color: #ffffcc">
- 		 <center><h2>October 2020</h2></center>
- 		 
+    <div class="container" style="background-color: #ffffcc">
     <a name="top"></a>
-  <!--To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.-->
+ 		 <center><h2>October 2020</h2></center> 
+     
   <ul class="nav nav-pills nav-justified">
    <li><a href="index.html">Home</a></li>
    <li><a class="active" href="october20.html">October 2020</a></li>
    <li><a href="november20.html">November 2020</a></li>
+   <li><a href="december20.html">December 2020</a></li>
   </ul>
-  
-   </div> 
+  </div>
+</head>
+<body style="background-color: #ffffcc">
+	
+   <hr style="height:3px;border-width:0;color:black;background-color:gray; width:80%">
    
-  <div class="sidenav">
+  <div id="navbar">
   <a href="#top">Top</a>
   <a href="#chandelier">Chandelier</a>
   <a href="#talkhouse">Talkhouse</a>
@@ -40,8 +41,8 @@
   </div>
   
   
-   		<hr style="height:3px;border-width:0;color:black;background-color:gray; width:80%">
-<div class="main">
+   		
+<div class="content">
     <div id="chandelier" class="container" style="width:auto">
       <h3>Chandelier - 7/10</h3><p>by Will Paquin</p>
       <p class="container; fontsize">Will Paquin began his music career on tik tok when he posted a video sitting on a porch with a sunset
@@ -63,13 +64,13 @@
 	  <br />
 	  
 	  <center><h4>Likes:</h4></center>
-      <p id="container" class="fontsize">In general I really enjoyed the results of Paquin's first 
+      <p class="fontsize container">In general I really enjoyed the results of Paquin's first 
       song. I feel that sometimes when an artist plays a rift it can sometimes produce a sub-par song, yet "Chandelier" was a solid
       track. The lyrics established a good baseline for the future of his music which can be seen throughout his recent videos of 
       conceptual songs. I find myself not getting enough of his music and constantly looking for more rifts or tunes to listen to.
       </p>
       <center><h4>Dislikes:</h4></center>
-      <p id="container" class="fontsize">The only dislike I have about "Chandelier" is the use of 
+      <p class="fontsize container">The only dislike I have about "Chandelier" is the use of 
       what I would describe as the sound a homing missile would make as it approaches its target. I wish he hadn't included it in 
       the song simply because the rest of it is something I could fall asleep to and the one synth song he put in clashes with the 
       rest of the song. Luckily it only comes up a few times in the song which is why I rated the song a 7. Without this sound I 
@@ -94,14 +95,14 @@
       <br />
 	  
       <center><h4>Likes:</h4></center>
-      <p id="container" class="fontsize">I am a huge fan of the matchup of talent in this podcast.
+      <p class="fontsize container">I am a huge fan of the matchup of talent in this podcast.
        To put a veteran artist like Mac in a call with Dayglow, an artist on the edge of establishing himself in the industry, it created
        the perfect environment for the podcast. It was the perfect listen for a late weeknight and served its purpose as background 
        music as I did some homework. As a huge fan of Mac, any new content was good content and it was interesting to hear about the effect 
        of the pandemic on the indie music industry.
       </p>
       <center><h4>Dislikes:</h4></center>
-      <p id="container" class="fontsize">I found the 45 minute podcast to drag at time as the 
+      <p class="fontsize container">I found the 45 minute podcast to drag at time as the 
       conversation lulled at points. Mac has a very calm demeanor which translated in the podcast. Overall, the slow pace was 
       the only thing that I disliked, but it weighed heavily on my ranking. 
       </p>
@@ -125,13 +126,13 @@
 	  <br />
 	  
       <center><h4>Likes:</h4></center>
-      <p id="container" class="fontsize">The only thing I can say that I do like is the features that 
+      <p class="fontsize container">The only thing I can say that I do like is the features that 
       the album includes. Drake consistently puts out catchy and enjoyable songs, but not on this song. Morgan Freeman is 
       arguably one of the most shocking and beneficial additions to the album. His two songs, which are more like voice recordings,
       went viral on Tik Tok which helped to boost views. 
       </p>
       <center><h4>Dislikes:</h4></center>
-      <p id="container" class="fontsize">I'll keep this short by saying I disliked everything else
+      <p class="fontsize container">I'll keep this short by saying I disliked everything else
       on the album. I found the beats to be uncoordinated and clashing with other instruments used in songs. I was hoping for 
       big results with Drake as a feature but "Mr. Right Now" has a weird high pitched beat mixed with 808's and hi-hats.
        In my opinion without the main beat, it would have been a hit. Overall disappointed and skipped most of the songs 
@@ -161,7 +162,20 @@
 			</div>
 	</div>
  </div>
+<script>
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 
 </html>
