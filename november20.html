@@ -4,9 +4,17 @@
   <head class="header">
     <link rel="stylesheet"; type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4BF917RL3"></script>
 	<script>
@@ -33,24 +41,47 @@
 </head>
 <body style="background-color: #ffffcc">
     
-   		<hr style="height:3px;border-width:0;color:black;background-color:gray; width:80%">
-   		<a name="pixelbath"></a>
- </div> 
- 
- 
-  <div id="navbar">
-    <a href="#top">Top</a>
-	<a href = "#pixelbath">Pixel Bath</a>
-	<a href = "#beautifulhavoc">Beautiful Havoc</a>
-	<a href = "#canwe">Can We</a>
-	<a href = "#flowerboy">Flower Boy</a>
-	<a href = "#milehigh">Mile High</a>
-	<a href = "#thisolddog">This Old Dog</a>
-	<a href = "#mbdtf">My Beautiful Dark Twisted Fantasy</a>
-	<a href = "#showmehow">Show Me How</a>
-	<a href = "#lens">Lens</a>
-  </div>
+   <hr style="height:3px;border-width:0;color:black;background-color:gray; width:80%">
+   <a name="pixelbath"></a>
    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#index.html">Music Moves</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Months<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#october20.html">October 2020</a></li>
+            <li><a href="#november20.html">November 2020</a></li>
+            <li><a href="#december20.html">December 2020</a></li>
+          </ul>
+        </li>
+        <li><a href="#top">Top</a></li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Song's from November<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href = "#pixelbath">Pixel Bath</a></li>
+           <li><a href = "#beautifulhavoc">Beautiful Havoc</a></li>
+           <li><a href = "#canwe">Can We</a></li>
+           <li><a href = "#flowerboy">Flower Boy</a></li>
+           <li><a href = "#milehigh">Mile High</a></li>
+           <li><a href = "#thisolddog">This Old Dog</a></li>
+           <li><a href = "#mbdtf">My Beautiful Dark Twisted Fantasy</a></li>
+           <li><a href = "#showmehow">Show Me How</a></li>
+           <li><a href = "#lens">Lens</a></li> 
+          </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
    
 <div class="content"> 
     <div class="container"  style="width:auto">
@@ -431,6 +462,17 @@
 	</div>
  </div>
 <script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
