@@ -1,0 +1,68 @@
+.weeklyimg {
+  height:225px;
+  width:225px;
+}
+
+.fontsize{
+  font-size:18px;
+}
+
+/* Style the navbar */
+#navbar{
+	width: 80%;
+	background-color: #3A9DFA;
+	overflow: hidden;
+	display: table;
+	z-index: 1;
+	left: 0;
+	margin: 0;
+}
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h4{
+  color: #3A9DFA;
+}
+
+
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  height:auto;
+}
+
+/*I don't know if this actually does anything*/
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
