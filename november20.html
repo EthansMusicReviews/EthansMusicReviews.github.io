@@ -30,7 +30,7 @@
 
    		<a name="mbdtf"></a>
 <nav class="navbar navbar-inverse" style="background-color:#3A9DFA; width:80%">
-  <div class="container-fluid">
+  <div class="container-fluid" id="navbar">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -465,19 +465,49 @@
 			</div>
 	</div>
  </div>
-<script>
-window.onscroll = function() {myFunction()};
+		<script>
+			/* Toggle between adding and removing the "responsive" class to topnav when the
+			user clicks on the icon */
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+			window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script> 
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
+		
+		<script>
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
 </body>
 </html>
