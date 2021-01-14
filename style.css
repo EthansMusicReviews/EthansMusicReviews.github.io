@@ -45,3 +45,8 @@
   height:auto;
 }
 
+.video{
+    max-width:560px;
+    max-height:315px;
+    vertical-align:center;
+}
