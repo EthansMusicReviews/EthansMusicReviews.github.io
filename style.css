@@ -10,6 +10,7 @@
 /* Style the navbar */
 #navbar{
   position: fixed;
+  z-index:1;
   width: 90%;
   height:auto;
   top: 0;
