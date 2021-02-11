@@ -78,3 +78,20 @@
   width: 100%;
   max-width: 600px;
 }
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
