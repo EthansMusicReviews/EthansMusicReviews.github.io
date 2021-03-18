@@ -72,6 +72,13 @@
 		<center><h2 style="vertical-align:top">October 2020</h2></center> 
 		<hr style="height:3px;border-width:0;color:black;background-color:gray; width:80%">
 
+
+
+       
+   
+       
+       
+       <!-- This is a tester -->
 		<div class="container" style="width:auto"> 
 		<h3 style="color:#3A9DFA">Chandelier - 7/10</h3><p>by Will Paquin</p> 
 				<p class="fontsize container"> 
@@ -180,7 +187,16 @@
 		</div> 
 		<hr style="height:3px;border-width:0;color:black;background-color:gray; width:80%"> 
 		<br />
-
+           <button type="button" class="collapsible"><img class="weeklyimg" src="scaryhours2.jpg"/><p>Chandelier - 7/10 by Will Paquin</p></button>
+			<div class="words">
+  				<p>honestly a good song</p>
+			</div>
+			
+			<div class="words">
+  				<p>honestly a good song</p>
+			</div>
+  
+   
 		<div class="row" class="col-md-12"> 
 
 			<div class="col-md-6"> 
@@ -196,8 +212,26 @@
 				<iframe src="https://open.spotify.com/embed/playlist/582pioWdvidKtqyznDrmuJ" width="300" height="280" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
 			</div> 
 		
+		
+		
+		
 		</div>
 
 </body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </html>
