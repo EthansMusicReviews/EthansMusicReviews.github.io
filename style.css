@@ -135,9 +135,9 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   vertical-align:center;
-  border-style:solid;
+  /*border-style:solid;
   border-color: #3A9DFA;
-  border-width:1px;
+  border-width:1px;*/
   width:80%;
 }
 
