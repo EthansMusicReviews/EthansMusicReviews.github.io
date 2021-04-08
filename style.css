@@ -101,7 +101,7 @@
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: #3A9DFA;
-  color: #ffffcc;
+  color: #3A9DFA;
   cursor: pointer;
   padding: 18px;
   width: 80%;
@@ -112,8 +112,8 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #3A9DFA;
+.active, .collapsible {
+  background-color: #ffffcc;
 }
 
 .collapsible:after {
@@ -130,13 +130,11 @@
 
 .words {
   padding: 0 18px;
-  background-color: #ffffcc;
+  background-color:#ffffcc;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   vertical-align:center;
-  /*border-style:solid;
-  border-color: #3A9DFA;
-  border-width:1px;*/
-  width:80%;
+  color:#3A9DFA;
 }
+
