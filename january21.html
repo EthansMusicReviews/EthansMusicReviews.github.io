@@ -43,6 +43,7 @@
 					<li><a href="january21.html">January 2021</a></li>
 					<li><a href="february21.html">February 2021</a></li>
 					<li><a href="march21.html">March 2021</a></li>
+					<li><a href="april21.html">April 2021</a></li>
 				  </ul>
 				</li>
 				<li><a href="#top"  style="color:#ffffcc">Top</a></li>
@@ -879,4 +880,50 @@
 		
 		</div>
 </body>
+<!--
+<button type="button" class="collapsible container">
+	<h3 style="color:gray">Chandelier - 7/10</h3><p>by Will Paquin</p> 
+		<p class="fontsize"> 
+		Will  
+		</p>
+</button>
+<div class="words container">
+	<div class="video-wrap">
+	  <div class="video-container" style="max-width:560px">
+		<iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/wGgsBAuUhZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  </div>
+	</div>
+
+
+		<br />
+
+		<h4 style="color:gray">Likes:</h4>
+					<p class="fontsize"> 
+					In 
+					</p> 
+					
+		<h4 style="color:gray">Dislikes:</h4> 
+					<p class="fontsize"> 
+					The  
+					</p> 
+				<br>
+		</div> 
+</div>
+-->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </html>
