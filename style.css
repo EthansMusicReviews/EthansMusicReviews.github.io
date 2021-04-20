@@ -17,7 +17,7 @@
   right:0;
   left:0;
   margin: 0 auto;
-  background-color:#3A9DFA;
+  background-color:#00739a;
 }
 
 /* Page content */
@@ -32,7 +32,7 @@
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
-  background-color:#3A9DFA;
+  background-color:#00739a;
   text-decoration: none;
 }
 
@@ -100,8 +100,8 @@
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #3A9DFA;
-  color: #3A9DFA;
+  background-color: #007e9a;
+  color: #007e9a;
   cursor: pointer;
   padding: 18px;
   width: 80%;
@@ -135,6 +135,6 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   vertical-align:center;
-  color:#3A9DFA;
+  color:#00739a;
 }
 
