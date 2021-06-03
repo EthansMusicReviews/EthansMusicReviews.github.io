@@ -5,6 +5,7 @@
 
 .fontsize{
   font-size:18px;
+  color:white
 }
 
 /* Style the navbar */
@@ -23,6 +24,7 @@
 /* Page content */
 .content {
   padding: 16px;
+  background-color:#8c8c8b;
 }
 
 /* Navbar links */
@@ -100,7 +102,7 @@
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #007e9a;
+  background-color: #8c8c8b;
   color: #007e9a;
   cursor: pointer;
   padding: 18px;
@@ -113,7 +115,7 @@
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible {
-  background-color: #ffffcc;
+  background-color: #8c8c8b;
 }
 
 .collapsible:after {
@@ -130,14 +132,14 @@
 
 .words {
   padding: 0 18px;
-  background-color:#ffffcc;
+  background-color:#8c8c8b;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   vertical-align:center;
-  color:#00739a;
+  color:white;
 }
 
 .link{
-  color:black;
+  color:white;
 }
